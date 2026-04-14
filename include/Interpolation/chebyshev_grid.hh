@@ -1,4 +1,4 @@
-#pragma once
+#pragma once   //per evitare che venga incluso più volte
 
 #include "Interpolation/default.hh"
 
@@ -32,7 +32,6 @@ struct StandardGrid {
     * @return         The interpolated value
     */
    double interpolate(double t, const vector_d &fj, size_t start, size_t end) const;
-
    /**
     * @brief Interpolate the derivative of a view of a vector on the grid
     *
@@ -71,7 +70,7 @@ struct StandardGrid {
     *
     * @param t The point in which to evaluate the derivative weight
     * @param j The index of the weight to evaluate
-    * @return  The value of the derivaive of the weight at the point (i.e. \f$ \partial w_j(t)
+    * @return  The value of the derivative of the weight at the point (i.e. \f$ \partial w_j(t)
     * /
     * \partial t\f$)
     */
@@ -83,7 +82,7 @@ struct StandardGrid {
     * @param t   The point in which to evaluate the derivative weight
     * @param j   The index of the weight to evaluate
     * @param den The denominator for the interpolan
-    * @return    The value of the derivaive of the weight at the point (i.e. \f$ \partial w_j(t)
+    * @return    The value of the derivative of the weight at the point (i.e. \f$ \partial w_j(t)
     * /
     * \partial t\f$)
     */

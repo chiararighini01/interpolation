@@ -13,9 +13,9 @@ namespace Generic
  *
  * Stores the points, the weights, the derivative matrix and the methods to interpolate
  */
-struct StandardGrid {
+struct StandardGrid { //srtuct è analogo a class ma con tutto pubblico di default
 
-   enum class STRATEGY : unsigned {
+   enum class STRATEGY : unsigned {  //crea un nuovo tipo (come se fosse int o double o vector,...)
       NAIVE = 0,
       FBF   = 1,
       SBF   = 2,
